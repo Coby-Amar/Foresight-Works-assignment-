@@ -2,7 +2,7 @@ import { FC, useCallback, useState } from 'react'
 
 import styles from "./Select.module.css"
 
-interface Option {
+export interface Option {
     label: string
     value: number
 }

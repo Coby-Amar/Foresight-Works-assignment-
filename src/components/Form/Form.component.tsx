@@ -3,7 +3,7 @@ import { useState } from 'react';
 import styles from "./Form.module.css";
 
 import Input from '../Input/Input.component';
-import Select from '../Select/Select.component';
+import Select, { Option } from '../Select/Select.component';
 
 interface FormData {
     name: string;
@@ -57,7 +57,7 @@ const Form: React.FC = () => {
         }
     };
 
-    const options = [
+    const options: Option[] = [
         { label: 'Option 1', value: 1 },
         { label: 'Option 2', value: 2 },
         { label: 'Option 3', value: 3 },
